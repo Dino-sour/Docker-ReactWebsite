@@ -1,0 +1,248 @@
+/* Menu Page styles */
+.menu-page{
+    background-color: #F7EEDF;
+    padding: 4rem 1rem;
+}
+
+.title-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.regular{
+    width: 702px;
+    height: 48px;
+    left: 516px;
+    top: 329px;
+
+    margin: 0;
+
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19.1012px;
+    line-height: 100%;
+    /* or 19px */
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+
+
+}
+
+.bold{
+    width: 702px;
+    height: 48px;
+    left: 516px;
+    top: 329px;
+
+    margin: 0;
+
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19.1012px;
+    line-height: 100%;
+    /* or 19px */
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+.menu-title{
+    width: 189px;
+    height: 99px;
+    left: 792px;
+    top: 210px;
+
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    /* or 48px */
+    align-items: center;
+    text-align: center;
+
+    color: #174109;
+
+
+}
+
+.category-container{
+    display: flex;
+    margin: 15px;
+    padding: 35px;
+    flex-direction: column;
+}
+
+.category-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    margin: 25px;
+}
+
+.menu-category{
+    width: 214px;
+    height: 35px;
+    left: 98px;
+    top: 439px;
+
+    padding: 50px 150px 50px 0px;
+
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 100%;
+
+    display: flex;
+    align-items: center;
+
+    color: #174109;
+}
+
+.menu-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: max-content;
+    grid-template-areas: 
+        "items items picture";
+}
+
+.menu-appetizers{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.menu-burgers-sandwiches{
+    display:flex;
+    flex-direction: row;
+
+    grid-area: items;
+}
+
+.menu-burgers-sandwiches > img{
+    width: 505px;
+    height: 327px;
+    left: 1200px;
+    top: 1117px;
+
+    grid-area: picture;
+
+    margin: 0px 25px 0px 25px;
+}
+
+.menu-items > img{
+    width: 556px;
+    height: 306px;
+    left: 100px;
+    top: 1818px;
+
+    margin: 0px 25px 0px 25px;
+}
+
+.menu-item{
+
+    width: 287px;
+    height: 109px;
+    left: 98px;
+    /* top: 561px; */
+
+    padding-left: 35px;
+
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19.1012px;
+    line-height: 100%;
+    /* or 19px */
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    text-align: start;
+
+    color: #000000;
+
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-name{
+    width: 169px;
+    height: 20px;
+    left: 98px;
+    top: 534px;
+
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    /* identical to box height, or 20px */
+    display: flex;
+    align-items: center;
+
+    color: #174109;
+
+}
+
+.menu-name > p{
+    text-align: start;
+}
+
+.menu-description > p{
+    text-align: start;
+}
+
+.last-part{
+    width: 110px;
+    height: 19px;
+    left: 95px;
+    top: 721px;
+
+    font-family: 'Lora';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 19.1012px;
+    line-height: 100%;
+    /* or 19px */
+    display: flex;
+    align-items: center;
+    text-transform: lowercase;
+
+    color: #174109;
+
+
+}
+
+.menu-price{
+
+    width: 31px;
+    height: 20px;
+    left: 406px;
+    top: 534px;
+
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    /* identical to box height, or 20px */
+    display: flex;
+    align-items: center;
+
+    color: #174109;
+
+
+}

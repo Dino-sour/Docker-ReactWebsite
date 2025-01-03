@@ -1,0 +1,216 @@
+.events-page {
+  font-family: "Lato", sans-serif;
+  background-color: #fefaf1;
+  color: #2b2b2b;
+  padding: 20px;
+}
+
+.events-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.events-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.events-header h1 {
+  font-size: 2.5rem;
+  color: #2b2b2b;
+  margin-bottom: 10px;
+}
+
+.events-header p {
+  font-size: 1.2rem;
+  color: #595959;
+}
+
+.events-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.calendar-section {
+  flex: 2;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.calendar-iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+}
+
+.upcoming-events {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.upcoming-events h2 {
+  font-size: 1.8rem;
+  color: #2b2b2b;
+  margin-bottom: 20px;
+}
+
+.upcoming-events ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.upcoming-events ul li {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #2b2b2b;
+}
+
+.upcoming-events ul li strong {
+  display: block;
+  font-size: 1.2rem;
+  color: #333333;
+}
+
+.view-all-link {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #ff6b35;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.view-all-link:hover {
+  text-decoration: underline;
+}
+
+.events-footer {
+  margin-top: 50px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.events-footer h2 {
+  font-size: 1.8rem;
+  color: #2b2b2b;
+  margin-bottom: 20px;
+}
+
+.events-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.events-footer ul li {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #2b2b2b;
+}
+
+.events-footer ul li strong {
+  display: block;
+  font-size: 1.2rem;
+  color: #333333;
+}
+
+@media (max-width: 768px) {
+  .events-content {
+    flex-direction: column;
+  }
+
+  .calendar-section,
+  .upcoming-events {
+    width: 100%;
+  }
+}
+
+.calendar-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.react-calendar {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.selected-date {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-content h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.modal-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.modal-content li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.close-modal {
+  background-color: #ff6b6b;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.close-modal:hover {
+  background-color: #ff4c4c;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

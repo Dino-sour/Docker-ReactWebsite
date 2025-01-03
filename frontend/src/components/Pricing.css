@@ -1,0 +1,122 @@
+.pricing-page {
+    min-height: 100vh;
+    background-color: #F7EEDF;
+    padding: 40px 20px;
+  }
+  
+  .pricing-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .pricing-header h1 {
+    color: #004d00;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .pricing-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    gap: 30px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .pricing-section {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pricing-section h2 {
+    color: #004d00;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .tables-list,
+  .pricing-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .table-info,
+  .price-info {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    background-color: white;
+  }
+  
+  .table-count {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .table-type {
+    color: #004d00;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .price-amount {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #004d00;
+    margin: 10px 0;
+  }
+  
+  .price-unit {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .gst-notice {
+    text-align: center;
+    color: #666;
+    margin-top: 30px;
+    font-style: italic;
+    max-width: 1200px;
+    margin: 30px auto 0;
+  }
+  
+  /* Loading and Error States */
+  .pricing-loading,
+  .pricing-error {
+    text-align: center;
+    padding: 40px;
+    font-size: 1.2rem;
+  }
+  
+  .pricing-error {
+    color: #dc3545;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .pricing-grid-container {
+      grid-template-columns: 1fr;
+      max-width: 600px;
+    }
+  
+    .pricing-section {
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .pricing-header h1 {
+      font-size: 2rem;
+    }
+  
+    .pricing-section h2 {
+      font-size: 1.3rem;
+    }
+  }

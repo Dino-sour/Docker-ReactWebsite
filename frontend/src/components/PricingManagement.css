@@ -1,0 +1,105 @@
+.pricing-management {
+    padding: 20px;
+  }
+  
+  .management-section {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .management-section h2 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .price-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .price-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+  }
+  
+  .item-name {
+    font-weight: 500;
+    color: #444;
+    min-width: 200px;
+  }
+  
+  .price-input-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .currency {
+    color: #666;
+    font-weight: 500;
+  }
+  
+  .price-input-group input {
+    width: 100px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .price-label {
+    color: #666;
+    white-space: nowrap;
+  }
+  
+  .message {
+    padding: 15px;
+    border-radius: 4px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+  }
+  
+  .message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+  }
+  
+  .management-loading {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+    font-size: 1.2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .price-item {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .price-input-group {
+      width: 100%;
+    }
+  
+    .price-input-group input {
+      flex: 1;
+    }
+  }

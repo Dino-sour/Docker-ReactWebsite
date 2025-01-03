@@ -1,0 +1,410 @@
+.league-registration {
+  min-height: 100vh;
+  background-color: #F7EEDF;
+  padding: 2rem 1rem;
+}
+
+.league-registration > * {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Header and Filter Section */
+.night-select-container {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.night-select {
+  padding: 0.75rem;
+  border: 1px solid #004d00;
+  border-radius: 4px;
+  background-color: white;
+  color: #333;
+  font-family: inherit;
+  font-size: 0.95rem;
+  min-width: 200px;
+  cursor: pointer;
+}
+
+.night-select:focus {
+  outline: none;
+  border-color: #006400;
+  box-shadow: 0 0 0 2px rgba(0, 77, 0, 0.1);
+}
+
+/* Registration Container Layout */
+.registration-container {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 2rem;
+}
+
+/* Left Container - Team Lists */
+.left-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.registration-box {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.registration-box h2 {
+  color: #004d00;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #004d00;
+}
+
+.teams-list-container {
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.teams-list-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.teams-list-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.teams-list-container::-webkit-scrollbar-thumb {
+  background: #004d00;
+  border-radius: 4px;
+}
+
+.teams-list-container::-webkit-scrollbar-thumb:hover {
+  background: #006400;
+}
+
+/* Team List Items */
+.team-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #e5e5e5;
+  transition: all 0.2s ease;
+}
+
+.team-list-item:hover {
+  transform: translateX(4px);
+  border-color: #004d00;
+}
+
+.team-name {
+  font-family: inherit;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.contact-button {
+  background-color: #004d00;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background-color 0.2s;
+}
+
+.contact-button:hover {
+  background-color: #006400;
+}
+
+/* Right Container - Registration Form */
+.signup-box {
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.signup-box h2 {
+  color: #004d00;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #004d00;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  color: #444;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #004d00;
+  box-shadow: 0 0 0 2px rgba(0, 77, 0, 0.1);
+}
+
+/* Checkbox Group */
+.form-group.checkbox-group {
+  display: grid;
+  grid-template-columns: auto min-content;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  max-width: 600px; /* Adjust this value as needed */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.checkbox-label-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.checkbox-label-container input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+}
+
+.checkbox-label-container span {
+  font-size: 0.95rem;
+  color: #444;
+  white-space: nowrap;
+}
+
+.info-icon-container {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  justify-self: start;
+}
+
+.info-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #004d00;
+  color: white;
+  font-size: 12px;
+  font-style: italic;
+  cursor: help;
+}
+
+.tooltip {
+  visibility: hidden;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  width: 250px;
+  white-space: normal;
+  text-align: center;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.2s;
+  margin-bottom: 5px;
+}
+
+.info-icon-container:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+}
+
+/* Players Section */
+.players-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.player-input-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.player-input-with-remove {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.player-input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+.add-player-button {
+  background: none;
+  border: 2px dashed #004d00;
+  color: #004d00;
+  padding: 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+}
+
+.add-player-button:hover {
+  background-color: #004d00;
+  color: white;
+}
+
+.remove-player-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
+.submit-button {
+  background-color: #004d00;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  align-self: center;
+  margin-top: 1rem;
+}
+
+.submit-button:hover {
+  background-color: #006400;
+}
+
+/* Messages */
+.message {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-width: 300px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.message.success {
+  background-color: #f0fff4;
+  color: #006400;
+  border: 1px solid #68d391;
+}
+
+.message.error {
+  background-color: #fff5f5;
+  color: #dc3545;
+  border: 1px solid #feb2b2;
+}
+
+.message.fade-out {
+  opacity: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .registration-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .left-container {
+    order: 2;
+  }
+
+  .signup-box {
+    order: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .league-registration {
+    padding: 1rem;
+  }
+
+  .registration-box,
+  .signup-box {
+    padding: 1.5rem;
+  }
+
+  .form-group input,
+  .form-group select {
+    min-width: auto;
+  }
+
+  .checkbox-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+

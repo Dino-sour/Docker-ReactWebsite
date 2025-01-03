@@ -1,0 +1,288 @@
+/* Page Layout */
+.team-finder-page {
+    min-height: 100vh;
+    background-color: #F7EEDF;
+    padding: 2rem 1rem;
+  }
+  
+  .team-finder-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  /* Header Styles */
+  .team-finder-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .team-finder-header h1 {
+    color: #004d00;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .team-finder-header p {
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
+  }
+  
+  /* Button Styles */
+  .create-profile-button {
+    background-color: #004d00;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .create-profile-button:hover,
+  .lookup-button:hover {
+    background-color: #006400;
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #666;
+    cursor: pointer;
+    padding: 0.5rem;
+    line-height: 1;
+  }
+  
+  .close-button:hover {
+    color: #333;
+  }
+  
+  .lookup-button {
+    background-color: #004d00;
+    color: white;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 0.5rem;
+  }
+  
+  /* Layout Components */
+  .team-finder-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+  }
+  
+  /* Players Section */
+  .players-section {
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .players-placeholder {
+    text-align: center;
+    padding: 3rem 0;
+    color: #666;
+  }
+  
+  .players-header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Filter Styles */
+  .info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .filter-card,
+  .profile-manager-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .filter-card {
+    margin-bottom: 1.5rem;
+  }
+  
+  .filter-card h3 {
+    color: #004d00;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .filter-sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+    justify-items: center;
+  }
+  
+  .filter-section {
+    text-align: center;
+    align-items: center;
+  }
+  
+  .filter-section h4 {
+    color: #444;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  
+  .nights-container,
+  .skill-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    align-items: center;
+  }
+  
+
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #444;
+    cursor: pointer;
+    padding: 0.25rem 0;
+    min-width: 120px; 
+    justify-content: flex-start;
+  }
+  
+  .checkbox-label input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #004d00;
+    border-radius: 3px;
+  }
+  
+  .checkbox-label:hover {
+    background-color: #f5f5f5;
+    border-radius: 4px;
+  }
+  
+  /* Profile Manager Card */
+  .profile-manager-card h3 {
+    color: #004d00;
+    margin-bottom: 1rem;
+  }
+  
+  /* Form Styles */
+  .teamFinder-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .teamFinder-form-group label {
+    color: #555;
+    font-size: 0.9rem;
+  }
+  
+  .teamFinder-form-group input {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.95rem;
+  }
+  
+  /* Filter Tags */
+  .active-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .filter-tag {
+    background-color: #e8f5e9;
+    color: #004d00;
+    padding: 0.25rem 0.75rem;
+    border-radius: 16px;
+    font-size: 0.875rem;
+    border: 1px solid #004d00;
+  }
+  
+  /* Message Styles */
+  .message {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  .message.error {
+    background-color: #fff5f5;
+    color: #dc3545;
+    border: 1px solid #feb2b2;
+  }
+  
+  .message.success {
+    background-color: #f0fff4;
+    color: #006400;
+    border: 1px solid #68d391;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .team-finder-content {
+      grid-template-columns: 1fr;
+    }
+  
+    .team-finder-header h1 {
+      font-size: 2rem;
+    }
+  
+    .filter-sections {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+  
+    .nights-container,
+    .skill-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+  
+    .checkbox-label {
+      min-width: 120px;
+    }
+  }
+
+  .filter-category {
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  
+  .filter-category h4 {
+    color: #004d00;
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #004d00;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
